@@ -3,13 +3,59 @@ import movieImg from '../assets/movie-app.png';
 import andaluzImg from '../assets/andaluz.png';
 import todoImg from '../assets/todo.png';
 import portfImg from '../assets/portf.png';
-import logo from '../assets/react.svg'
 import guitImg from '../assets/guitarApp.png'
+import jobifyImg from '../assets/jobify.png';
+import movifyImg from '../assets/movifyImg.png';
+
 const projects = [
+  {
+    name: 'Jobify',
+    description: 'IT WILL TAKE TO TIME LOAD. Full stack application using the MERN stack. Complete with user Login/Register, and a dashboard that tracks various jobs, tied to the user.',
+    tags: [{
+      name: 'react',
+      color: 'blue-text-gradient',
+    }, {
+      name: 'NodeJS',
+      color: 'green-text-gradient',
+    },
+    {
+      name: 'Express',
+      color: 'pink-text-gradient',
+    },
+    {
+      name: 'MongoDB',
+      color: 'green-text-gradient',
+    },
+    ],
+    image: jobifyImg,
+    source_code_link: "https://github.com/roddp/job-app",
+    preview_link: "https://mern-job-app-t9au.onrender.com/",
+  },
+  {
+    name: "Movify v2",
+    description:
+      "Movie page using TailwindCSS. Improved from the movie app v1.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "text-[white]",
+      }, {
+        name: "vite",
+        color: "text-[yellow]",
+      },
+    ],
+    image: movifyImg,
+    source_code_link: "https://github.com/roddp/movify-app",
+    preview_link: "https://roddp.github.io/movify-app/",
+  },
   {
     name: "Projeto Luiza Andaluz",
     description:
-      "Responsive page for Luiza Andaluz Foundation with interactive map UI and admin tools",
+      "Group Project. Responsive page for Luiza Andaluz Foundation with interactive map UI and admin tools",
     tags: [
       {
         name: "react",
@@ -26,33 +72,7 @@ const projects = [
     image: andaluzImg,
     source_code_link: "https://github.com/iptomar/PSI_2020_2021_Grupo_D",
     preview_link: "https://iptomar.github.io/PSI_2020_2021_Grupo_D/",
-  }, {
-    name: "E-Guitar",
-    description:
-      "E-Commerce guitar app. Helped me learn global state management like Redux and responsive design with Bootstrap",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "redux",
-        color: "green-text-gradient",
-      },
-      {
-        name: "bootstrap",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "NodeJS",
-        color: "text-[#f7df1e]",
-      },
-    ],
-    image: guitImg,
-    source_code_link: "https://github.com/roddp/guitar-app",
-    preview_link: 'guitarApp'
   },
-
   {
     name: "Movie App",
     description:
