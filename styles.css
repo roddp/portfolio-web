@@ -268,9 +268,7 @@ a { color: inherit; text-decoration: none; }
 .hero-stage {
   position: relative;
   width: 100%;
-  /* keep the stage shorter than the panel's usable height so the whole hero
-     row stays vertically centred (a taller stage forces it to top-align) */
-  height: clamp(360px, 62svh, 560px);
+  height: clamp(420px, 78svh, 760px);
   margin-left: clamp(-80px, -5vw, -24px);   /* bleed toward the copy to tie them together */
   display: flex;
   align-items: center;
