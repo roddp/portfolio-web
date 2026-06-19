@@ -282,7 +282,10 @@ a { color: inherit; text-decoration: none; }
   height: 100%;
   touch-action: pan-y;
 }
-#stage canvas { display: block; }
+/* constrain the canvas to the stage box; the renderer keeps a hi-res buffer
+   (updateStyle=false), so without this it displays at buffer px = stage × DPR
+   and overflows on high-DPI mobile */
+#stage canvas { display: block; width: 100% !important; height: 100% !important; }
 .stage-loader {
   position: absolute;
   inset: 0;
