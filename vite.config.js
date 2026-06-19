@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/portfolio-web/',
+  base: '/',
   build: {
     assetsDir: '_assets',
   },
