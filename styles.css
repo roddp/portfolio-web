@@ -383,10 +383,17 @@ a { color: inherit; text-decoration: none; }
   transition: color .25s ease;
 }
 .contact .big a:hover { color: var(--wine-deep); }
+/* shrink the column to the headline's width so the links below can span it */
+.contact-col {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+}
 .contact-links {
   display: flex;
-  justify-content: center;
-  gap: 36px;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
   margin-top: 48px;
   flex-wrap: wrap;
 }
