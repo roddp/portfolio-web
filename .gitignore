@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.vite/
+*.local
+.env
+# original asset folders (served via public/ instead)
+/assets/
+/uploads/
+/screenshots/

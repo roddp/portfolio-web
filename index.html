@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rodrigo Pereira — JavaScript Developer</title>
+  <meta name="description"
+    content="Rodrigo Pereira — Full-stack JavaScript developer. React, TypeScript, Node.js, PostgreSQL, and AI integration." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav-links">
+      <a href="#top" data-nav>Home</a>
+      <a href="#skills" data-nav>Skills</a>
+      <a href="#experience" data-nav>Experience</a>
+      <a href="#contact" data-nav>Contact</a>
+      <a href="#" class="resume" data-resume>Resume</a>
+    </div>
+  </nav>
+
+  <main class="viewport" id="viewport">
+    <div class="rail" id="rail">
+
+      <!-- ============ HERO ============ -->
+      <section class="panel panel-hero" id="top" data-screen-label="Hero">
+        <div class="panel-inner hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">JavaScript Developer
+            </p>
+            <h1><span class="ln">Rodrigo</span><span class="ln">Pereira</span></h1>
+            <p class="role" id="heroQuote">My grandma doesn't understand what i do.</p>
+            <div class="actions">
+              <a href="#" class="btn btn-primary" data-resume>Resume</a>
+              <a href="#" class="btn btn-ghost" data-linkedin>LinkedIn</a>
+            </div>
+          </div>
+          <div class="hero-stage">
+            <div id="stage"></div>
+            <div class="stage-loader">Loading model</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SKILLS ============ -->
+      <section class="panel" id="skills" data-screen-label="Skills">
+        <div class="panel-inner">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">What I work with</p>
+              <h2>Skills &amp; tools</h2>
+            </div>
+            <span class="section-index">01 / 03</span>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h3>Languages</h3>
+              <ul>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>SQL</li>
+                <li>Python</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3>Frontend</h3>
+              <ul>
+                <li>React</li>
+                <li>Vite</li>
+                <li>Tailwind CSS</li>
+                <li>SPAs</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3>Backend</h3>
+              <ul>
+                <li>Node.js &amp; Express</li>
+                <li>PostgreSQL</li>
+                <li>REST APIs</li>
+                <li>Multi-tenant</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3>AI &amp; DevOps</h3>
+              <ul>
+                <li>LLM integration</li>
+                <li>Prompt engineering</li>
+                <li>Docker</li>
+                <li>CI/CD</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ EXPERIENCE ============ -->
+      <section class="panel" id="experience" data-screen-label="Experience">
+        <div class="panel-inner">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Where I've been</p>
+              <h2>Experience</h2>
+            </div>
+            <span class="section-index">02 / 03</span>
+          </div>
+
+          <div class="xp-list">
+            <article class="xp">
+              <div class="when">2025 — 2026</div>
+              <div>
+                <div class="role-line">
+                  <h3>JavaScript Developer</h3>
+                  <span class="co">99rabbits GmbH</span>
+                </div>
+                <p>An AI-powered SaaS platform that measures and improves workplace culture.</p>
+                <ul class="xp-points">
+                  <li>Built the full React &amp; TypeScript frontend, with a no-code drag-and-drop UI for configuring AI
+                    assistants.</li>
+                  <li>Built the real-time AI chat, streaming LLM responses.</li>
+                  <li>Designed the Node.js &amp; PostgreSQL backend — accounts, surveys, analytics, reporting.</li>
+                  <li>Secure auth and data isolation across a multi-tenant architecture.</li>
+                  <li>Owned delivery: Docker, CI/CD, and Microsoft Teams integration.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="xp">
+              <div class="when">BSc</div>
+              <div>
+                <div class="role-line">
+                  <h3>Computer Engineering</h3>
+                  <span class="co">Instituto Politécnico de Tomar</span>
+                </div>
+
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="panel panel-contact contact" id="contact" data-screen-label="Contact">
+        <div class="panel-inner">
+          <p class="big"><a href="mailto:rodrigodomingospereira99@gmail.com">Let's talk.</a></p>
+          <div class="contact-links">
+            <a href="#" data-linkedin>LinkedIn</a>
+            <a href="#" data-resume>CV</a>
+            <a href="mailto:rodrigodomingospereira99@gmail.com">Email</a>
+          </div>
+        </div>
+        <div class="panel-foot">
+          <span>© 2026 Rodrigo Pereira</span>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <div class="pager" id="pager">
+    <div class="seg"><span></span></div>
+    <div class="seg"><span></span></div>
+    <div class="seg"><span></span></div>
+    <div class="seg"><span></span></div>
+    <span class="count" id="pageCount">01 / 04</span>
+  </div>
+  <div class="scrollcue" id="scrollcue"><span>Scroll</span><b>→</b></div>
+
+  <script>
+    const viewport = document.getElementById('viewport');
+    const rail = document.getElementById('rail');
+    const nav = document.getElementById('nav');
+    const pager = document.getElementById('pager');
+    const pageCount = document.getElementById('pageCount');
+    const scrollcue = document.getElementById('scrollcue');
+    const segs = [...pager.querySelectorAll('.seg')];
+    const panels = [...document.querySelectorAll('.panel')];
+    const navMap = { top: 0, skills: 1, experience: 2, contact: 3 };
+    const navLinks = [...document.querySelectorAll('[data-nav]')];
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const N = panels.length;
+
+    const THRESHOLD = 110;   // accumulated scroll delta needed to flip a page
+    let index = 0;
+    let charge = 0;          // signed accumulation toward the next/prev page
+    let locked = false;      // true while a page transition is animating
+    let lastInput = 0;
+    const pad2 = (n) => String(n + 1).padStart(2, '0');
+
+    function place(animate) {
+      rail.classList.toggle('no-anim', !animate || reduceMotion);
+      rail.style.transform = 'translateX(' + (-index * viewport.clientWidth) + 'px)';
+      if (!animate || reduceMotion) requestAnimationFrame(() => rail.classList.remove('no-anim'));
+    }
+
+    function updateUI() {
+      const f = Math.min(1, Math.abs(charge) / THRESHOLD);
+      const dir = charge > 0 ? 1 : -1;
+      const nextIdx = index + dir;
+      segs.forEach((s, k) => {
+        const span = s.querySelector('span');
+        s.classList.toggle('cur', k === index);
+        if (k === index) {
+          span.style.transformOrigin = 'left center';
+          span.style.transform = 'scaleX(1)';
+        } else if (k === nextIdx && nextIdx >= 0 && nextIdx < N && charge !== 0) {
+          span.style.transformOrigin = dir > 0 ? 'left center' : 'right center';
+          span.style.transform = 'scaleX(' + f + ')';
+        } else {
+          span.style.transform = 'scaleX(0)';
+        }
+      });
+      pageCount.textContent = pad2(index) + ' / ' + pad2(N - 1);
+      nav.classList.toggle('scrolled', index > 0);
+      navLinks.forEach((a) => {
+        const id = a.getAttribute('href').slice(1);
+        a.classList.toggle('active', navMap[id] === index);
+      });
+    }
+
+    function goTo(i, animate = true) {
+      i = Math.max(0, Math.min(N - 1, i));
+      charge = 0;
+      if (i === index) { updateUI(); return; }
+      index = i;
+      locked = true;
+      place(animate);
+      updateUI();
+      const settle = (animate && !reduceMotion) ? 860 : 0;
+      clearTimeout(goTo._t);
+      goTo._t = setTimeout(() => { locked = false; }, settle);
+    }
+
+    // ---- wheel: scroll an overflowing panel first, otherwise charge to flip ----
+    viewport.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      lastInput = performance.now();
+      const dy = e.deltaY, dx = e.deltaX;
+      const delta = Math.abs(dx) > Math.abs(dy) ? dx : dy;
+      if (locked) return;
+
+      const p = panels[index];
+      if (p && p.scrollHeight > p.clientHeight + 1) {
+        const atTop = p.scrollTop <= 0;
+        const atBot = p.scrollTop >= p.scrollHeight - p.clientHeight - 1;
+        if ((delta > 0 && !atBot) || (delta < 0 && !atTop)) { p.scrollTop += delta; charge = 0; updateUI(); return; }
+      }
+
+      charge += delta;
+      // resist at the ends
+      if ((index === 0 && charge < 0) || (index === N - 1 && charge > 0)) charge *= 0.35;
+      if (Math.abs(charge) >= THRESHOLD) { goTo(index + (charge > 0 ? 1 : -1)); return; }
+      updateUI();
+    }, { passive: false });
+
+    // drain the charge bar when the user pauses
+    function decayLoop() {
+      if (!locked && charge !== 0 && performance.now() - lastInput > 140) {
+        charge *= 0.82;
+        if (Math.abs(charge) < 1.5) charge = 0;
+        updateUI();
+      }
+      requestAnimationFrame(decayLoop);
+    }
+    decayLoop();
+
+    // ---- touch: one swipe = one page ----
+    let tx = 0, ty = 0, touching = false, swipeAxis = null;
+    viewport.addEventListener('touchstart', (e) => {
+      if (locked) return;
+      tx = e.touches[0].clientX; ty = e.touches[0].clientY; touching = true; swipeAxis = null;
+    }, { passive: true });
+    viewport.addEventListener('touchmove', (e) => {
+      if (!touching || locked) return;
+      const ddx = e.touches[0].clientX - tx;
+      const ddy = e.touches[0].clientY - ty;
+      if (swipeAxis === null && (Math.abs(ddx) > 8 || Math.abs(ddy) > 8)) swipeAxis = Math.abs(ddx) > Math.abs(ddy) ? 'x' : 'y';
+      if (swipeAxis === 'y') {
+        const p = panels[index];
+        if (p && p.scrollHeight > p.clientHeight + 1) return; // let panel scroll natively
+      }
+      if (swipeAxis === 'x') {
+        charge = -ddx;
+        if ((index === 0 && charge < 0) || (index === N - 1 && charge > 0)) charge *= 0.35;
+        updateUI();
+        e.preventDefault();
+      }
+    }, { passive: false });
+    viewport.addEventListener('touchend', () => {
+      touching = false;
+      if (swipeAxis === 'x' && Math.abs(charge) >= THRESHOLD * 0.5) goTo(index + (charge > 0 ? 1 : -1));
+      else { charge = 0; updateUI(); }
+    });
+
+    // ---- keyboard ----
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === 'PageDown') { e.preventDefault(); goTo(index + 1); }
+      else if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); goTo(index - 1); }
+      else if (e.key === 'Home') { e.preventDefault(); goTo(0); }
+      else if (e.key === 'End') { e.preventDefault(); goTo(N - 1); }
+    });
+
+    // ---- nav + anchors ----
+    navLinks.forEach((a) => {
+      a.addEventListener('click', (e) => {
+        const id = a.getAttribute('href').slice(1);
+        if (id in navMap) { e.preventDefault(); goTo(navMap[id]); }
+      });
+    });
+
+    // hide the scroll cue once they move
+    function hideCue() { scrollcue.classList.add('gone'); }
+    viewport.addEventListener('wheel', hideCue, { once: true, passive: true });
+    window.addEventListener('keydown', hideCue, { once: true });
+
+    // keep alignment on resize
+    let rt = null;
+    window.addEventListener('resize', () => {
+      clearTimeout(rt);
+      rt = setTimeout(() => place(false), 120);
+    });
+
+    place(false);
+    updateUI();
+
+    // ---- hero quote: start random, fade between them every few seconds ----
+    const heroQuote = document.getElementById('heroQuote');
+    const QUOTES = [
+      "My grandma doesn't understand what i do.",
+      "I don't understand what i do sometimes.",
+      'className="flex justify-center"',
+      'It works on my machine.',
+      'git commit -m "final FINAL v2 (real)"',
+      'I know what git rebase does.',
+    ];
+    if (heroQuote) {
+      let qi = Math.floor(Math.random() * QUOTES.length);
+      heroQuote.textContent = QUOTES[qi];
+      if (!reduceMotion && QUOTES.length > 1) {
+        setInterval(() => {
+          heroQuote.classList.add('fading');
+          setTimeout(() => {
+            qi = (qi + 1) % QUOTES.length;
+            heroQuote.textContent = QUOTES[qi];
+            heroQuote.classList.remove('fading');
+          }, 450);
+        }, 6000);
+      }
+    }
+
+    // central place to drop real links once you have them
+    const LINKS = {
+      resume: 'uploads/cv.pdf',   // export your CV as PDF and save it here
+      linkedin: 'https://linkedin.com/in/rodrigo-pereira99'
+    };
+    document.querySelectorAll('[data-resume]').forEach(a => { if (LINKS.resume !== '#') { a.href = LINKS.resume; a.target = '_blank'; } });
+    document.querySelectorAll('[data-linkedin]').forEach(a => { if (LINKS.linkedin !== '#') { a.href = LINKS.linkedin; a.target = '_blank'; } });
+  </script>
+  <script type="module" src="scene.js"></script>
+
+</body>
+
+</html>
