@@ -394,22 +394,28 @@ a { color: inherit; text-decoration: none; }
   justify-content: space-between;
   gap: 24px;
   width: 100%;
-  margin-top: 48px;
+  margin-top: clamp(26px, 3.5vh, 40px);
+  padding-top: clamp(18px, 2.4vh, 26px);
+  border-top: 1px solid var(--line);   /* one delicate rule instead of three heavy underlines */
   flex-wrap: wrap;
 }
 .contact-links a {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  font-size: clamp(17px, 1.4vw, 20px);
-  color: var(--ink);
-  padding-bottom: 5px;
-  border-bottom: 2px solid var(--ink-faint);
-  transition: border-color .2s ease, color .2s ease;
+  position: relative;
+  font-size: clamp(15px, 1.15vw, 18px);
+  color: var(--ink-soft);
+  padding-bottom: 2px;
+  transition: color .2s ease;
 }
-.contact-links a .arrow { font-family: var(--mono); color: var(--ink-faint); transition: transform .2s ease, color .2s ease; }
-.contact-links a:hover { border-bottom-color: var(--wine); }
-.contact-links a:hover .arrow { transform: translate(2px,-2px); color: var(--wine); }
+.contact-links a::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 0; height: 1.5px;
+  background: var(--wine);
+  transition: width .25s ease;
+}
+.contact-links a:hover { color: var(--ink); }
+.contact-links a:hover::after { width: 100%; }
 
 /* ---------- contact panel footer + chrome ---------- */
 .panel-foot {
